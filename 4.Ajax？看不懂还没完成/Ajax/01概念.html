@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- url其实就是网址，通过网址可以直接到你想要的网站，而域名则需要经过dns解析后才成为网址
+		     同一个ip地址可以对应多个域名，一个域名只能对应一个ip地址-->
+			 
+		AJAX = 异步 JavaScript 和 XML。
+		AJAX 是一种用于创建快速动态网页的技术。
+		没用AJAX的网页，你点一个按钮就要刷新一下页面;用了AJAX之后，你点击，然后页面上的一行字就变化了，页面本身不用刷。
+		
+		异步和同步：
+		1.异步处理呢就是我们通过事件触发到 ajax，请求服务器，在这个期间无论服务器有没有响应，客户端的其他代码一样可以运行。
+		2.同步处理：我们通过实践触发 ajax，请求服务器，在这个期间等待服务器处理请求，
+		在这个期间客户端不能做任何处理。当 ajax 执行完毕才会继续执行其他代码。
+		 
+		步骤：
+		1.创建 XMLHttpRequest 对象：variable=new XMLHttpRequest();
+		2.向服务器发送请求
+	     使用XMLHttpRequest对象的open()和send()方法：
+		 xmlhttp.open(method,url,async);
+		 <!-- method：请求的类型；GET 或 POST  post用于发送给服务器大量数据，正常都用get
+              url：文件在服务器上的位置
+              async：true（异步）或 false（同步）-->
+		 xmlhttp.send();
+	</body>
+</html>
